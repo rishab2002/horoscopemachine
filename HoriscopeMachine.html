@@ -1,0 +1,222 @@
+
+<html>
+
+  <head>
+
+    <title>Horiscope Machine</title>
+
+    <script>
+        function horoscope()
+        {
+          var month = 0;
+          month = document.getElementById("mon").value;
+          month = parseInt(month);
+          var day = 0;
+          day = document.getElementById("da").value;
+          day = parseInt(day);
+          var pic = "<img src = 'horse.png' width = '400px' height='400px'>";
+          var msg = "Beware of your fears!";
+
+          if(month == 1)
+          {
+            if(day<=20)
+            {
+              pic = "<img src = 'capricorn.jpg' width = '400px' height='400px'>";
+              msg = "Work alone if you can, and take a walk to clear your head.";
+            }
+            else if(day>=21)
+            {
+              pic = "<img src = 'aquarius.png' width = '400px' height='400px'>";
+              msg = "Squabbles may break out among members of your group, Aquarius.";
+            }
+          }
+          else if(month == 2)
+          {
+            if(day<=19)
+            {
+              pic = "<img src = 'aquarius.png' width = '400px' height='400px'>";
+              msg = "Squabbles may break out among members of your group, Aquarius.";
+
+            }
+            else if(day>=20)
+            {
+              pic = "<img src = 'pisces.jpg' width = '400px' height='400px'>";
+              msg="Someone may skip out on responsibilities today, Pisces, causing extra tasks to fall to everyone else, including you. ";
+            }
+          }
+        else if(month == 3)
+          {
+            if(day<=20)
+            {
+              pic = "<img src = 'pisces.jpg' width = '400px' height='400px'>";
+              msg="Someone may skip out on responsibilities today, Pisces, causing extra tasks to fall to everyone else, including you. ";
+
+
+            }
+            else if(day>=21)
+            {
+              pic = "<img src = 'aries.png' width = '400px' height='400px'>";
+              msg = "If you've been planning to set off on a trip soon, Aries, make a list of what you need to do beforehand and check off each task as you complete it. ";
+
+            }
+          }
+        else if(month == 4)
+          {
+            if(day<=20)
+            {
+              pic = "<img src = 'aries.png' width = '400px' height='400px'>";
+              msg = "If you've been planning to set off on a trip soon, Aries, make a list of what you need to do beforehand and check off each task as you complete it. ";
+            }
+            else if(day>=21)
+            {
+              pic = "<img src = 'taurus.png' width = '400px' height='400px'>";
+              msg = "You may have been worried about money lately, Taurus. Today a family member could make an expenditure that you view as unnecessary and irresponsible. If you look at the situation objectively, you may see that you aren't in dire financial straits and the expenditure didn't take that much out of the family coffers.";
+
+            }
+          }
+        else if(month == 5)
+          {
+            if(day<=21)
+            {
+              pic = "<img src = 'taurus.png' width = '400px' height='400px'>";
+              msg = "You may have been worried about money lately, Taurus. Today a family member could make an expenditure that you view as unnecessary and irresponsible. If you look at the situation objectively, you may see that you aren't in dire financial straits and the expenditure didn't take that much out of the family coffers.";
+
+
+            }
+            else if(day>=22)
+            {
+              pic = "<img src = 'gemini.png' width = '400px' height='400px'>";
+              msg="Today you might find it necessary to turn down an invitation to a social event, Gemini, and the host might for some reason seem offended. Your friend is probably overworked and stressed and apt to overreact to just about any situation. Relax a little. Explain things to your friend and then propose that you get together at another time. That's all you can do now.";
+            }
+          }
+        else if(month == 6)
+          {
+            if(day<=21)
+            {
+              pic = "<img src = 'gemini.png' width = '400px' height='400px'>";
+              msg = "Today you might find it necessary to turn down an invitation to a social event, Gemini, and the host might for some reason seem offended. Your friend is probably overworked and stressed and apt to overreact to just about any situation. Relax a little. Explain things to your friend and then propose that you get together at another time. That's all you can do now.";
+
+            }
+            else if(day>=22)
+            {
+              pic = "<img src = 'cancer.png' width = '400px' height='400px'>";
+              msg="Concentrate on routine tasks that require little thought and can be done sitting down. Stay out of any squabbles! Relax in a hot bath tonight.";
+            }
+          }
+          else if(month == 7)
+          {
+            if(day<=22)
+            {
+              pic = "<img src = 'cancer.png' width = '400px' height='400px'>";
+              msg="Concentrate on routine tasks that require little thought and can be done sitting down. Stay out of any squabbles! Relax in a hot bath tonight.";
+
+            }
+            else if(day>=23)
+            {
+              pic = "<img src = 'leo.jpg' width = '400px' height='400px'>";
+              msg = "An event could find a current or potential love partner paying a lot of attention to others, Leo. You might feel neglected and unloved, as though your friend is doing this to hurt you. This probably isn't the case. Your partner is just trying to be sociable and doesn't realize that it upsets you. Do some mingling. Your friend might have the same reaction as you and come running!";
+            }
+          }
+        else if(month == 8)
+          {
+            if(day<=22)
+            {
+              pic = "<img src = 'leo.jpg' width = '400px' height='400px'>";
+              msg = "An event could find a current or potential love partner paying a lot of attention to others, Leo. You might feel neglected and unloved, as though your friend is doing this to hurt you. This probably isn't the case. Your partner is just trying to be sociable and doesn't realize that it upsets you. Do some mingling. Your friend might have the same reaction as you and come running!";
+
+
+            }
+            else if(day>=23)
+            {
+              pic = "<img src = 'virgo.png' width = '400px' height='400px'>";
+              msg="You must first be who you are and then take the necessary actions in order to have what you really want.";
+
+            }
+          }
+          else if(month == 9)
+          {
+            if(day<=23)
+            {
+              pic = "<img src = 'virgo.png' width = '400px' height='400px'>";
+              msg="You must first be who you are and then take the necessary actions in order to have what you really want.";
+
+            }
+            else if(day>=24)
+            {
+              pic = "<img src = 'libra.png' width = '400px' height='400px'>";
+              msg="An angry call from someone who lives far away might catch you off guard today, Libra. In your mind, the person has no reason to be angry and is blowing things out of proportion. They probably won't listen to reason. Say as calmly as you can that you'll get in touch tomorrow and then hang up. Give this person time to calm down before even trying to straighten things out.";
+
+            }
+          }
+          else if(month == 10)
+          {
+            if(day<=23)
+            {
+              pic = "<img src = 'libra.png' width = '400px' height='400px'>";
+              msg="An angry call from someone who lives far away might catch you off guard today, Libra. In your mind, the person has no reason to be angry and is blowing things out of proportion. They probably won't listen to reason. Say as calmly as you can that you'll get in touch tomorrow and then hang up. Give this person time to calm down before even trying to straighten things out.";
+
+
+            }
+            else if(day>=24)
+            {
+              pic = "<img src = 'scorpio.png' width = '400px' height='400px'>";
+              msg="Today you might spend a lot of time looking for a lost object, Scorpio.";
+
+            }
+          }
+          else if(month == 11)
+          {
+            if(day<=22)
+            {
+                pic = "<img src = 'scorpio.png' width = '400px' height='400px'>";
+                msg="Today you might spend a lot of time looking for a lost object, Scorpio.";
+
+            }
+            else if(day>=23)
+            {
+              pic = "<img src = 'sagittarius.jpg' width = '400px' height='400px'>";
+              msg=" A minor quarrel or separation could take place with a love partner, Sagittarius, probably over something that seems trivial. It's likely to get your dander up to the point where you may never want to see this person again. Go for a workout or brisk walk to clear your head, get the endorphins going, and view the situation more objectively. Then phone your friend and work it out.";
+            }
+          }
+          else if(month == 12)
+          {
+            if(day<=21)
+            {
+                pic = "<img src = 'sagittarius.jpg' width = '400px' height='400px'>";
+                msg=" A minor quarrel or separation could take place with a love partner, Sagittarius, probably over something that seems trivial. It's likely to get your dander up to the point where you may never want to see this person again. Go for a workout or brisk walk to clear your head, get the endorphins going, and view the situation more objectively. Then phone your friend and work it out.";
+
+            }
+            else if(day>=22)
+            {
+              pic = "<img src = 'capricorn.jpg' width = '400px' height='400px'>";
+              msg = "Work alone if you can, and take a walk to clear your head.";
+            }
+          }
+          else {
+            pic = "<img src = 'baguette.jpg' width = '400px' height='400px'>";
+            msg = "BONJOUR YOU WANT TO EAT A BAGUETTE??? HAHA NO I RUN NOW!!!!";
+          }
+          document.getElementById("fortune").innerHTML=msg;
+          document.getElementById("astrosign").innerHTML=pic;
+
+        }
+    </script>
+
+  </head>
+
+  <body>
+    <input type="text" id="mon" value="Month Born 1 - 12">
+    <input type="text" id="da" value="Day Born 1 - 31">
+    <br>
+    <input type="button" value="Horoscope Maker" onclick="horoscope()">
+    <br>
+    <hr>
+    <br>
+    <span id="fortune"></span>
+    <br>
+    <hr>
+    <br>
+    <span id="astrosign"></span>
+  </body>
+
+</html>
